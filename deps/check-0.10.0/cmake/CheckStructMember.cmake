@@ -29,7 +29,7 @@ MACRO (CHECK_STRUCT_MEMBER _STRUCT _MEMBER _HEADER _RESULT)
 
    SET(_CHECK_STRUCT_MEMBER_SOURCE_CODE "
 ${_INCLUDE_FILES}
-int main()
+int main(void)
 {
    static ${_STRUCT} tmp;
    if (sizeof(tmp.${_MEMBER}))
